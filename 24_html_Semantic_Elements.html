@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>24 HTML Semantic Elements</title>
+		<style type="text/css">
+		body {
+			background-color: rgb(40,40,40);
+		}
+		header{
+			font-size: 200%;
+			text-align: center;
+			background-color: rgb(150, 150, 150);
+			font-family: arial Black;
+
+		}
+		nav {
+/*			list-style-type: none;*/
+			background-color: rgb(80, 80, 80);
+			font-family: arial Black;
+			width: 50%;
+			margin: auto;
+			border: 1px transparent white;
+		}
+		section {
+/*			float: left;*/
+/*			border: 1px solid black;*/
+			width: 50%;
+/*			padding-left: 30px;*/
+			padding: 5px;
+			background-color: rgb(95, 95, 95);
+			margin: auto;
+			
+		}
+		article {
+			width: 50%;
+		}
+		aside {
+			float: left;
+			border: 1px transparent;
+			width: 50%;
+			background-color: rgb(95, 95, 95);
+			clear: left;
+		}
+
+		h1 {
+			font-family: arial Black ;
+			text-decoration: underline;
+		}
+		footer {
+			background-color: rgb(90, 90, 90);
+			font-size: 80%;
+			font-family: sans-serif;
+			overflow: hidden;
+			text-align: center;
+			border-top: 1px solid black;
+			padding-top: -10px;
+		}
+		h2 {
+			text-decoration: underline;
+		}
+		table {
+			border: 1px solid grey;
+			margin: auto;
+		}
+		tr:nth-child(even) {
+			background-color: rgb(80, 80, 80);
+		}
+		div.footeralign {
+			text-align: center;
+		}
+		div.footeralign ul li {
+			display: inline;
+			margin: 1%;
+		}
+	</style>
+
+</head>
+<body>
+	<header>HTML Semantic Elements</header>
+
+	<nav>
+		<ul>
+			<li><a href="#WhatSemElm">What are Semantic Elements?</li>
+			<li><a href="#SemElm">Semantic Elements in HTML</a></li>
+				<ul>
+					<li><a href="#sectionelement">HTML &ltsection&gt Element</a></li>
+					<li><a href="#articlelement">HTML &ltarticle&gt Element</a></li>
+					<li><a href="#nestingsectartic">Nesting &ltarticle&gt in &ltsection&gt or Vice Versa?</a></li>
+					<li><a href="#headerelement">HTML &ltheader&gt Element</a></li>
+					<li><a href="#footerelement">HTML &ltfooter&gt Element</a></li>
+					<li><a href="#navelement">HTML &ltnav&gt Element</a></li>	
+					<li><a href="#asideelement">HTML &ltaside&gt Element</a></li>
+					<li><a href="#figurelement">HTML &ltfigure&gt and &ltfigcaption&gt Elements</a></li>
+				</ul>
+			<li><a href="#whysemanticelements">Why Semantic Elements?</a></li>
+		</ul>
+	</nav>
+	<section>
+		<h1 id="WhatSemElm">What are Semantic Elements?</h1>
+		<p>A semantic element clearly describes its meaning to both the browser and the developer.<br>Examples of non-semantic elements: &ltdiv&gt and &ltspan&gt - Tells nothing about its content.<br>
+		Examples of semantic elements: &ltform&gt, &lttable&gt, and &ltarticle&gt - Clearly defines its content.</p>
+	
+	</section>
+	<section>
+		<h1 id="SemElm">Semantic Elements in HTML</h1>
+		<p>Many web sites contain HTML code like: <div id="nav"> <div class="header"> <div id="footer"> to indicate navigation, header, and footer.<br>In HTML there are some semantic elements that can be used to define different parts of a web page: </p>
+			<div>
+				<ul style="display: inline-block;";>
+					<li>&ltarticle&gt</li>
+					<li>&ltaside&gt</li>
+					<li>&ltdetails&gt</li>
+					<li>&ltfigcaption&gt</li>
+					<li>&ltfigure&gt</li>
+					<li>&ltfooter&gt</li>
+					<li>&ltheader&gt</li>
+					<li>&ltmain&gt</li>
+					<li>&ltmark&gt</li>
+					<li>&ltnav&gt</li>
+					<li>&ltsection&gt</li>
+					<li>&ltsummary&gt</li>
+					<li>&lttime&gt</li>
+				</ul>
+				<img style="display:inline-block;" src="C:\Users\buent\Documents\Dokumente HP Computer\Coding\Webdevelopment\HTML\21-HTML_Layout_Elements_and_Techniques\img_sem_elements.gif" alt="Picture Semantic Elements in HTML">
+			</div>
+	</section>
+	<section>
+		<h2 id="sectionelement">HTML &ltsection&gt Element</h2>
+		<p>The &ltsection&gt element defines <strong>a section in a document</strong>.<br>According to W3C's HTML documentation: "A section is a thematic grouping of content, typically with a heading."<br>Examples of where a &ltsection&gt element can be used:<br>
+		<ul>
+			<li>Chapters</li>
+			<li>Introduction</li>
+			<li>News items</li>
+			<li>Contact information</li>
+		</ul>
+		A web page could normally be split into sections for introduction, content, and contact information.</p>
+	</section>
+	<section>
+		<h2 id="articlelement">HTML &ltarticle&gt Element</h2>
+		<p>The &ltarticle&gt element specifies <strong> independent, self-contained content</strong>.<br>An article should make sense on its own, and it should be possible to distribute it independently from the rest of the web site.<br>Examples of where the &ltarticle&gt element can be used:
+		<ul>
+			<li>Forum posts</li>
+			<li>Blog posts</li>
+			<li>User comments</li>
+			<li>Product cards</li>
+			<li>Newspaper articles</li>
+		</p>
+		</ul>	
+	</section>
+		<section>
+		<h2 id="nestingsectartic">Nesting &ltarticle&gt in &ltsection&gt or Vice Versa?</h2>
+		<p>The &ltarticle&gt element specifies independent, self-contained content.<br>
+		The &ltsection&gt element defines section in a document.<br>
+		Can we use the definitions to decide how to nest those elements? No, we cannot!<br>
+		So, you will find HTML pages with &ltsection&gt elements containing &ltarticle&gt elements, and &ltarticle&gt elements<br>containing &ltsection&gt elements.</p>
+	</section>
+		<section>
+		<h2 id="headerelement">HTML &ltheader&gt Element</h2>
+		<p>The &ltheader&gt element represents a container for introductory content or a set of navigational links.A &ltheader&gt element typically contains:
+		<ul>
+		<li>one or more heading elements (&lth1&gt - &lth6&gt)</li>
+		<li>logo or icon</li>
+		<li>authorship information</li></ul>
+		Note: You can have several &ltheader&gt elements in one HTML document. However, &ltheader&gt cannot be placed within a &ltfooter&gt, &ltaddress&gt or another &ltheader&gt element.
+		</p>
+	</section>
+		<section>
+		<h2 id="footerelement">HTML &ltfooter&gt Element</h2>
+		<p>The &ltfooter&gt element defines a footer for a document or section.<br>A &ltfooter&gt element typically contains:
+		<ul>
+		<li>authorship information</li>
+		<li>copyright information</li>
+		<li>contact information</li>
+		<li>sitemap</li>
+		<li>back to top links</li>
+		<li>related documents</li>
+		</ul>
+		You can have several &ltfooter&gt elements in one document.</p>
+	</section>
+		<section>
+		<h2 id="navelement">HTML &ltnav&gt Element</h2>
+		<p>The &ltnav&gt element defines a set of navigation links.<br>Notice that NOT all links of a document should be inside a &ltnav&gt element. The &ltnav&gt element is intended only for major blocks of navigation links.<br>Browsers, such as screen readers for disabled users, can use this element to determine whether to omit the initial rendering of this content.<br></p>
+	</section>
+	<section>
+		<h2 id="asideelement">HTML &ltaside&gt Element</h2>
+		<p>The &ltaside&gt element defines some content aside from the content it is placed in (like a sidebar).<br>The &ltaside&gt content should be indirectly related to the surrounding content.</p>
+		<p></p>
+	</section>
+	<section>
+		<h2 id="figurelement">HTML &ltfigure&gt and &ltfigcaption&gt Elements</h2>
+		<p>The &ltfigure&gt tag specifies self-contained content, like illustrations, diagrams, photos, code listings, etc.<br>The &ltfigcaption&gt tag defines a caption for a &ltfigure&gt element.<br> The &ltfigcaption&gt element can be placed as the first or as the last child of a &ltfigure&gt element.
+		The &ltimg&gt element defines the actual image/illustration.</p>
+		<p></p>
+	</section>
+	<section style="padding-bottom: 0px;">
+		<h1 id="whysemanticelements">Why Semantic Elements?</h1>
+		<p>According to the W3C: "A semantic Web allows data to be shared and reused across applications, enterprises, and communities."</p>
+		<table>
+			<caption><i>Different Semantic Elements</i></caption>
+			<th>Tag</th><th>Description</th>
+			<tr><td>&ltarticle&gt</td><td>Defines independent, self-contained content</td></tr>
+			<tr><td>&ltaside&gt</td><td>Defines content aside from the page content</td></tr>
+			<tr><td>&ltdetails&gt</td><td>Defines additional details that the user can view or hide</td></tr>
+			<tr><td>&ltfigcaption&gt</td><td>Defines a caption for a &ltfigure&gt element</td></tr>
+			<tr><td>&ltfigure&gt</td><td>Specifies self-contained content, like illustrations, diagrams, photos, code listings, etc.</td></tr>
+			<tr><td>&ltfooter&gt</td><td>Defines a footer for a document or section</td></tr>
+			<tr><td>&ltheader&gt</td><td>Specifies a header for a document or section</td></tr>
+			<tr><td>&ltmain&gt</td><td>Specifies the main content of a document</td></tr>
+			<tr><td>&ltmark&gt</td><td>Defines marked/highlighted text</td></tr>
+			<tr><td>&ltnav&gt</td><td>Defines navigation links</td></tr>
+			<tr><td>&ltsection&gt</td><td>Defines a section in a document</td></tr>
+			<tr><td>&ltsummary&gt</td><td>Defines a visible heading for a &ltdetails&gt element</td></tr>
+			<tr><td>&lttime&gt</td><td>Defines a date/time</td></tr>
+		</table>
+	</section>
+	<footer>
+		<div class="footeralign">
+			<ul>
+				<li><a href="">Go to top of page</a></li>
+				<li><a href="mailto:janosch.buente1@yahoo.de">Contact me via E-mail</a></li>
+				<li><a href="https://en.wikipedia.org/wiki/Copyright" target="_blank">Click here to see the definition of Copyright</a></li>
+			</ul>
+		</div>
+	</footer>
+</body>
+</html>
