@@ -83,9 +83,16 @@
 			max-width:600px;
 			display:inline;
 		}
-		@media screen and (min-width: 1000px) {
+/* 		@media screen and (min-width: 1000px) {
 		  .left, .main, .right {
 		    width: 50%; /* The width is 100%, when the viewport is 700px or smaller */
+		  }
+		} */
+		
+		@media only screen and (max-width: 768px) {
+		  /* For mobile phones: */
+		  [class*="col-"] {
+		    width: 100%;
 		  }
 		}
 		
