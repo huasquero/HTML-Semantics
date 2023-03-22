@@ -5,7 +5,7 @@
 	<meta name="viewport" content="width=device-width, min-width=700px, initial-scale=1.0">
 	<title>24 HTML Semantic Elements</title>
 		<style type="text/css">
-		body {
+				body {
 			background-color: rgb(40,40,40);
 		}
 		header{
@@ -15,25 +15,23 @@
 			font-family: arial Black;
 
 		}
-		nav {
+		nav{
 /*			list-style-type: none;*/
 			background-color: rgb(80, 80, 80);
 			font-family: arial Black;
 			width: 50%;
 			margin: auto;
 			border: 1px transparent white;
-			display:block;
-			padding: 5px;
+			display: block;
 		}
 		section {
-/*			float: left;*/
-/*			border: 1px solid black;*/
+			display: block;
+			border: 1px solid black;
 			width: 50%;
-/*			padding-left: 30px;*/
+/*			padding-left: 0px;*/
 			padding: 5px;
 			background-color: rgb(95, 95, 95);
-			margin: auto;
-			clear:left;
+			margin:auto;
 		}
 		article {
 			width: 50%;
@@ -57,7 +55,8 @@
 			overflow: hidden;
 			text-align: center;
 			border-top: 1px solid black;
-			padding-top: -10px;
+			clear: left;
+
 		}
 		h2 {
 			text-decoration: underline;
@@ -65,7 +64,6 @@
 		table {
 			border: 1px solid grey;
 			margin: auto;
-			overlow: hidden;
 		}
 		tr:nth-child(even) {
 			background-color: rgb(80, 80, 80);
@@ -73,11 +71,25 @@
 		div.footeralign {
 			text-align: center;
 		}
-		div.footeralign ul li {
+		div.footeralign ul {
 			display: inline;
+		}
+		div.footeralign li {
+/*			float: left;*/
 			margin: 1%;
+			display: inline-block;
+
 		}
 		.WebContainer {
+			width: 100%;
+			min-width: 1000px;
+		}
+/*		ul, li {
+			float:left;
+			width:50%;
+		}*/
+	</style>
+		<!-- .WebContainer {
 			width: 100%;
 			min-width: 1000px;
 		}
@@ -86,14 +98,14 @@
 			max-width:600px;
 			display:inline;
 		}
-/* 		@media screen and (min-width: 1000px) {
+		@media screen and (min-width: 1000px) {
 		  .left, .main, .right {
-		    width: 50%; /* The width is 100%, when the viewport is 700px or smaller */
+		    width: 50%; /* The width is 100%, when the viewport is 700px or smaller 
 		  }
-		} */
+		} 
 		
 		@media only screen and (max-width: 768px) {
-		  /* For mobile phones: */
+		   For mobile phones: 
 		section {
 		    width: 100%;	
 		  }
@@ -106,7 +118,7 @@
 		footer {
 			width:100%
 			}			
-	</style>
+	</style> -->
 
 </head>
 <body>
