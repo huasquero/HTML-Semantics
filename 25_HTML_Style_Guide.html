@@ -41,7 +41,9 @@
 /*				padding-left: 0px;*/
 				padding: 5px;
 				background-color: rgb(95, 95, 95);
-				margin: auto						
+				margin: auto;	
+				overflow: auto;
+
 			}
 		article {
 			width: 50%;
@@ -106,18 +108,18 @@
 		    overflow-x: hidden;
 		    padding-top: 20px;
 		}
-		@media screen and (max-width:1284px) {
+		@media and (max-width:1284px) {
 			.left, .main, .right{
-				width: 100%;
+				width: 80%;
 			}
 			nav, section {
 				width:80%;
 			}
 			.codeexamples{
-				position: relative;
-			}
-			pre {
-				position: static;
+				max-width:auto;
+				height:auto;
+				overflow: scroll;
+				border: transparent;
 			}
 			img {
 				max-width: 100%;
@@ -208,7 +210,7 @@
 				<li>Lowercase looks cleaner</li>
 				<li>Lowercase is easier to write</li>
 			</ul>
-			<div class="codeexamples" style="width:80%">
+			<div class="codeexamples">
 				Good:<br><br>
 				&lta&gt <u style="color: red; ">href</u>="https://www.w3schools.com/html/">Visit our HTML tutorial&lt/a&gt<br><br>
 				Bad:<br><br>
@@ -293,7 +295,7 @@
 			</div>
 			
 		<p style="text-align: center;">Good Table Example:</p>
-		<pre>
+		<div class="codeexamples">
 		&lttable&gt
 		  &lttr&gt
 		    &ltth&gtName&lt/th&gt
@@ -308,16 +310,16 @@
 		    &lttd&gtDescription of B&lt/td&gt
 		  &lt/tr&gt
 		&lt/table&gt
-		</pre>
+		</div>
 
 		<p style="text-align: center;">Good List Example:</p>
-		<pre>
+		<div class="codeexamples">
 		&ltul&gt
 		  &ltli&gtLondon&lt/li&gt
 		  &ltli&gtParis&lt/li&gt
 		  &ltli&gtTokyo&lt/li&gt
 		&lt/ul&gt
-		</pre>
+		</div>
 	</section>
 	<section>
 		<h1 id="Never_Skip_the_<title>_Element">Never Skip the &lttitle&gt Element</h1>
@@ -337,7 +339,7 @@
 		<p>An HTML page will validate without the &lthtml&gt and &ltbody&gt tags:<br>
 			Example:
 		</p>
-		<pre>
+		<div class="codeexamples">
 		&lt!DOCTYPE html&gt
 		&lthead&gt
 		  &lttitle&gtPage Title&lt/title&gt
@@ -345,7 +347,7 @@
 
 		&lth1&gtThis is a heading&lt/h1&gt
 		&ltp&gtThis is a paragraph.&lt/p&gt
-		</pre>
+		</div>
 		<p>However, we strongly recommend to always add the &lthtml&gt and &ltbody&gt tags!<br>
 		Omitting &ltbody&gt can produce errors in older browsers.<br>
 		Omitting &lthtml&gt and &ltbody&gt can also crash DOM and XML software.</p>
@@ -355,7 +357,7 @@
 		<p>The HTML &lthead&gt tag can also be omitted.<br>
 		Browsers will add all elements before &ltbody&gt, to a default &lthead&gt element.<br>
 		Example</p>
-		<pre>
+		<div class="codeexamples">
 		&lt!DOCTYPE html&gt
 		&lthtml&gt
 		&lttitle&gtPage Title&lt/title&gt
@@ -366,7 +368,7 @@
 		
 		&lt/body&gt
 		&lt/html&gt
-		</pre>
+		</div>
 		<p>However, we recommend using the &lthead&gt tag.</p>
 	</section>
 	<section>
